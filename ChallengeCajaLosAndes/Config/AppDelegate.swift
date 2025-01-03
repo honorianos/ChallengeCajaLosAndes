@@ -6,6 +6,12 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
+import netfox
+import Network
+
+//MARK: Global var Check Network
+var isOnline: Bool = false
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +20,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        IQKeyboardManager.shared.enable = true
+        NFX.sharedInstance().start() // in didFinishLaunchingWithOptions:
+        
+        //monitor internet
+        let monitor = NWPathMonitor()
+        let queue = DispatchQueue(label: "Monitor")
+        
+        monitor.pathUpdateHandler = { path in
+            if path.status == .satisfied {
+                isOnline = true
+                print("Si hay internet")
+            }else{
+                print("NOOOO hay internet")
+                isOnline = false
+            }
+        }
+        
+        monitor.start(queue: queue)
+        
+        
         return true
     }
 
