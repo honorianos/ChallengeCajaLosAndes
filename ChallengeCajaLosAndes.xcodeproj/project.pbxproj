@@ -22,19 +22,12 @@
 			remoteGlobalIDString = C91405562D2851970022EDF4;
 			remoteInfo = ChallengeCajaLosAndes;
 		};
-		C91405782D2851980022EDF4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C914054F2D2851970022EDF4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C91405562D2851970022EDF4;
-			remoteInfo = ChallengeCajaLosAndes;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C91405572D2851970022EDF4 /* ChallengeCajaLosAndes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeCajaLosAndes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C914056D2D2851980022EDF4 /* ChallengeCajaLosAndesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeCajaLosAndesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C91405772D2851980022EDF4 /* ChallengeCajaLosAndesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeCajaLosAndesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C914067A2D2A580E0022EDF4 /* ChallengeCajaLosAndes.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChallengeCajaLosAndes.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -61,11 +54,6 @@
 			path = ChallengeCajaLosAndesTests;
 			sourceTree = "<group>";
 		};
-		C914057A2D2851980022EDF4 /* ChallengeCajaLosAndesUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ChallengeCajaLosAndesUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,22 +76,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C91405742D2851980022EDF4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		C914054E2D2851970022EDF4 = {
 			isa = PBXGroup;
 			children = (
+				C914067A2D2A580E0022EDF4 /* ChallengeCajaLosAndes.xctestplan */,
 				C91405592D2851970022EDF4 /* ChallengeCajaLosAndes */,
 				C91405702D2851980022EDF4 /* ChallengeCajaLosAndesTests */,
-				C914057A2D2851980022EDF4 /* ChallengeCajaLosAndesUITests */,
 				C91405582D2851970022EDF4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,7 +94,6 @@
 			children = (
 				C91405572D2851970022EDF4 /* ChallengeCajaLosAndes.app */,
 				C914056D2D2851980022EDF4 /* ChallengeCajaLosAndesTests.xctest */,
-				C91405772D2851980022EDF4 /* ChallengeCajaLosAndesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,29 +151,6 @@
 			productReference = C914056D2D2851980022EDF4 /* ChallengeCajaLosAndesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C91405762D2851980022EDF4 /* ChallengeCajaLosAndesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C91405882D2851980022EDF4 /* Build configuration list for PBXNativeTarget "ChallengeCajaLosAndesUITests" */;
-			buildPhases = (
-				C91405732D2851980022EDF4 /* Sources */,
-				C91405742D2851980022EDF4 /* Frameworks */,
-				C91405752D2851980022EDF4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C91405792D2851980022EDF4 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				C914057A2D2851980022EDF4 /* ChallengeCajaLosAndesUITests */,
-			);
-			name = ChallengeCajaLosAndesUITests;
-			packageProductDependencies = (
-			);
-			productName = ChallengeCajaLosAndesUITests;
-			productReference = C91405772D2851980022EDF4 /* ChallengeCajaLosAndesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,10 +165,6 @@
 						CreatedOnToolsVersion = 16.1;
 					};
 					C914056C2D2851980022EDF4 = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = C91405562D2851970022EDF4;
-					};
-					C91405762D2851980022EDF4 = {
 						CreatedOnToolsVersion = 16.1;
 						TestTargetID = C91405562D2851970022EDF4;
 					};
@@ -241,7 +194,6 @@
 			targets = (
 				C91405562D2851970022EDF4 /* ChallengeCajaLosAndes */,
 				C914056C2D2851980022EDF4 /* ChallengeCajaLosAndesTests */,
-				C91405762D2851980022EDF4 /* ChallengeCajaLosAndesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,13 +207,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C914056B2D2851980022EDF4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C91405752D2851980022EDF4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -285,13 +230,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C91405732D2851980022EDF4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -299,11 +237,6 @@
 			isa = PBXTargetDependency;
 			target = C91405562D2851970022EDF4 /* ChallengeCajaLosAndes */;
 			targetProxy = C914056E2D2851980022EDF4 /* PBXContainerItemProxy */;
-		};
-		C91405792D2851980022EDF4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C91405562D2851970022EDF4 /* ChallengeCajaLosAndes */;
-			targetProxy = C91405782D2851980022EDF4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -319,10 +252,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChallengeCajaLosAndes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,10 +281,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChallengeCajaLosAndes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,40 +456,6 @@
 			};
 			name = Release;
 		};
-		C91405892D2851980022EDF4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6ZD458SWM3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shaw.ChallengeCajaLosAndesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ChallengeCajaLosAndes;
-			};
-			name = Debug;
-		};
-		C914058A2D2851980022EDF4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6ZD458SWM3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shaw.ChallengeCajaLosAndesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ChallengeCajaLosAndes;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,15 +482,6 @@
 			buildConfigurations = (
 				C91405862D2851980022EDF4 /* Debug */,
 				C91405872D2851980022EDF4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C91405882D2851980022EDF4 /* Build configuration list for PBXNativeTarget "ChallengeCajaLosAndesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C91405892D2851980022EDF4 /* Debug */,
-				C914058A2D2851980022EDF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

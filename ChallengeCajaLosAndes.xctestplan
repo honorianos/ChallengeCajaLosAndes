@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "B723100C-C68B-4003-8468-E170087EC4FB",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ChallengeCajaLosAndes.xcodeproj",
+      "identifier" : "C91405562D2851970022EDF4",
+      "name" : "ChallengeCajaLosAndes"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:ChallengeCajaLosAndes.xcodeproj",
+        "identifier" : "C914056C2D2851980022EDF4",
+        "name" : "ChallengeCajaLosAndesTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:ChallengeCajaLosAndes.xcodeproj",
+        "identifier" : "C91405762D2851980022EDF4",
+        "name" : "ChallengeCajaLosAndesUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
