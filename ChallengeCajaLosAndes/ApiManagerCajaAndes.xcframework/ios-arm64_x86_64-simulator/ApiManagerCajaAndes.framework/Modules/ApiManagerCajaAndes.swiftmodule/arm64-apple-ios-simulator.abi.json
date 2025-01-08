@@ -1,0 +1,385 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ApiManagerCajaAndes",
+    "printedName": "ApiManagerCajaAndes",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ApiManagerCajaAndes",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ApiManagerCajaAndes"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UtilsAPI",
+        "printedName": "UtilsAPI",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "baseURL",
+            "printedName": "baseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19ApiManagerCajaAndes8UtilsAPIC7baseURLSSvpZ",
+            "mangledName": "$s19ApiManagerCajaAndes8UtilsAPIC7baseURLSSvpZ",
+            "moduleName": "ApiManagerCajaAndes",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ApiManagerCajaAndes8UtilsAPIC7baseURLSSvgZ",
+                "mangledName": "$s19ApiManagerCajaAndes8UtilsAPIC7baseURLSSvgZ",
+                "moduleName": "ApiManagerCajaAndes",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "baseURLMoock",
+            "printedName": "baseURLMoock",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19ApiManagerCajaAndes8UtilsAPIC12baseURLMoockSSvpZ",
+            "mangledName": "$s19ApiManagerCajaAndes8UtilsAPIC12baseURLMoockSSvpZ",
+            "moduleName": "ApiManagerCajaAndes",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ApiManagerCajaAndes8UtilsAPIC12baseURLMoockSSvgZ",
+                "mangledName": "$s19ApiManagerCajaAndes8UtilsAPIC12baseURLMoockSSvgZ",
+                "moduleName": "ApiManagerCajaAndes",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ApiManagerCajaAndes8UtilsAPIC12baseURLMoockSSvsZ",
+                "mangledName": "$s19ApiManagerCajaAndes8UtilsAPIC12baseURLMoockSSvsZ",
+                "moduleName": "ApiManagerCajaAndes",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ApiManagerCajaAndes8UtilsAPIC12baseURLMoockSSvMZ",
+                "mangledName": "$s19ApiManagerCajaAndes8UtilsAPIC12baseURLMoockSSvMZ",
+                "moduleName": "ApiManagerCajaAndes",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authorizationHeader",
+            "printedName": "authorizationHeader",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19ApiManagerCajaAndes8UtilsAPIC19authorizationHeaderSSvpZ",
+            "mangledName": "$s19ApiManagerCajaAndes8UtilsAPIC19authorizationHeaderSSvpZ",
+            "moduleName": "ApiManagerCajaAndes",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ApiManagerCajaAndes8UtilsAPIC19authorizationHeaderSSvgZ",
+                "mangledName": "$s19ApiManagerCajaAndes8UtilsAPIC19authorizationHeaderSSvgZ",
+                "moduleName": "ApiManagerCajaAndes",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19ApiManagerCajaAndes8UtilsAPIC",
+        "mangledName": "$s19ApiManagerCajaAndes8UtilsAPIC",
+        "moduleName": "ApiManagerCajaAndes",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIProductosDetalleRequest",
+        "printedName": "APIProductosDetalleRequest",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchAccount",
+            "printedName": "fetchAccount(isFirstCall:responseType:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<τ_0_0, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<τ_0_0, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ApiManagerCajaAndes26APIProductosDetalleRequestV12fetchAccount11isFirstCall12responseType10completionySb_xmys6ResultOyxs5Error_pGctSeRzlFZ",
+            "mangledName": "$s19ApiManagerCajaAndes26APIProductosDetalleRequestV12fetchAccount11isFirstCall12responseType10completionySb_xmys6ResultOyxs5Error_pGctSeRzlFZ",
+            "moduleName": "ApiManagerCajaAndes",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable>",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19ApiManagerCajaAndes26APIProductosDetalleRequestV",
+        "mangledName": "$s19ApiManagerCajaAndes26APIProductosDetalleRequestV",
+        "moduleName": "ApiManagerCajaAndes",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/oswaldoescobar\/Downloads\/Caja Andina\/Framework\/ApiManagerCajaAndes\/ApiManagerCajaAndes\/ApiCall.swift",
+      "kind": "StringLiteral",
+      "offset": 182,
+      "length": 74,
+      "value": "\"https:\/\/fxservicesstaging.nunchee.com\/api\/1.0\/auth\/users\/login\/anonymous\""
+    },
+    {
+      "filePath": "\/Users\/oswaldoescobar\/Downloads\/Caja Andina\/Framework\/ApiManagerCajaAndes\/ApiManagerCajaAndes\/ApiCall.swift",
+      "kind": "StringLiteral",
+      "offset": 294,
+      "length": 60,
+      "value": "\"https:\/\/1e56283e-0ce5-4d4b-a21f-de829f523fd9.mock.pstmn.io\""
+    },
+    {
+      "filePath": "\/Users\/oswaldoescobar\/Downloads\/Caja Andina\/Framework\/ApiManagerCajaAndes\/ApiManagerCajaAndes\/ApiCall.swift",
+      "kind": "StringLiteral",
+      "offset": 399,
+      "length": 44,
+      "value": "\"Basic cHJ1ZWJhc2RldjpwcnVlYmFzZGV2U2VjcmV0\""
+    }
+  ]
+}

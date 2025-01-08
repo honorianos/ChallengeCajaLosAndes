@@ -1,0 +1,6 @@
+framework module ApiManagerCajaAndes {
+  umbrella header "ApiManagerCajaAndes.h"
+  export *
+
+  module * { export * }
+}

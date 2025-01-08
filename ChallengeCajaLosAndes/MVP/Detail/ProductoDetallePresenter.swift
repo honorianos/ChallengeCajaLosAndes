@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import ApiManagerCajaAndes
 
 protocol ProductoDetailPresenterDelegate: AnyObject {
     func showLoader(show: Bool)
@@ -26,14 +27,12 @@ class ProductoDetallePresenter {
     
     func callAccount(isFirstCall: Bool) {
         if isOnline {
-            APIProductosDetalleRequest.fetchAccount(isFirstCall: isFirstCall) { result in
-                DispatchQueue.main.async {
-                    switch result {
-                    case .success(let account):
-                        self.delegate?.successResponse(account: account)
-                    case .failure(let error):
-                        self.utils.showSimpleAlert(titulo: Strings.attentionTitle, mensaje: "code: \(error.localizedDescription)", vc: self.delegate!)
-                    }
+            ApiManagerCajaAndes.APIProductosDetalleRequest.fetchAccount(isFirstCall: false, responseType: CuentaResponse.self) { result in
+                switch result {
+                case .success(let account):
+                    self.delegate?.successResponse(account: account)
+                case .failure(let error):
+                    self.utils.showSimpleAlert(titulo: Strings.attentionTitle, mensaje: "code: \(error.localizedDescription)", vc: self.delegate!)
                 }
             }
         }
