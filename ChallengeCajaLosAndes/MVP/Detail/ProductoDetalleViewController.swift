@@ -117,7 +117,17 @@ extension ProductoDetalleViewController: ProductoDetailPresenterDelegate {
         }
        
         if let url = URL(string: account.cuenta.urlImage) {
-            cardImage.kf.setImage(with: url)
+            let placeholder = UIImage(named: "imagenSplas")
+            cardImage.kf.setImage(with: url, placeholder: placeholder, options: nil, progressBlock: nil) { result in
+                switch result {
+                case .success:
+                    print("Imagen cargada correctamente.")
+                case .failure(let error):
+                    print("Error al cargar la imagen: \(error.localizedDescription)")
+                }
+            }
+        } else {
+            cardImage.image = UIImage(named: "imagenSplas")
         }
         
         numberAccountTextfield.text = account.cuenta.numeroCuenta

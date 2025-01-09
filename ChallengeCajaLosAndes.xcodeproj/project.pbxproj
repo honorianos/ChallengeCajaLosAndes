@@ -24,6 +24,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C99083402D2F464A004FD3E9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C91405572D2851970022EDF4 /* ChallengeCajaLosAndes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeCajaLosAndes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C914056D2D2851980022EDF4 /* ChallengeCajaLosAndesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeCajaLosAndesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,11 +53,25 @@
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		C99083412D2F464A004FD3E9 /* Exceptions for "ChallengeCajaLosAndes" folder in "Embed Frameworks" phase from "ChallengeCajaLosAndes" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				ApiManagerCajaAndes.xcframework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
+			};
+			buildPhase = C99083402D2F464A004FD3E9 /* Embed Frameworks */;
+			membershipExceptions = (
+				ApiManagerCajaAndes.xcframework,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C91405592D2851970022EDF4 /* ChallengeCajaLosAndes */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				C914057F2D2851980022EDF4 /* Exceptions for "ChallengeCajaLosAndes" folder in "ChallengeCajaLosAndes" target */,
+				C99083412D2F464A004FD3E9 /* Exceptions for "ChallengeCajaLosAndes" folder in "Embed Frameworks" phase from "ChallengeCajaLosAndes" target */,
 			);
 			path = ChallengeCajaLosAndes;
 			sourceTree = "<group>";
@@ -108,6 +135,7 @@
 				C91405532D2851970022EDF4 /* Sources */,
 				C91405542D2851970022EDF4 /* Frameworks */,
 				C91405552D2851970022EDF4 /* Resources */,
+				C99083402D2F464A004FD3E9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,7 +284,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -285,7 +313,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

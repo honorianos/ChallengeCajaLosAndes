@@ -31,16 +31,20 @@ class LoginPresenter {
     }
     
     public func validateLogin(username: String, password: String) {
-        if username.isEmpty || password.isEmpty {
-            self.utils.showSimpleAlert(titulo: Strings.attentionTitle, mensaje: Strings.invalidDataMessage, vc: delegate!.self)
+        let regex = "^[0-9]{8}$"
+        let dniPredicate = NSPredicate(format: "SELF MATCHES %@", regex)
+        
+        if isOnline && dniPredicate.evaluate(with: username) {
+            self.delegate?.showLoader(show: true)
+            iniciarSesion(usuario: username, contrasena: password)
         } else {
-            if isOnline {
-                self.delegate?.showLoader(show: true)
-                iniciarSesion(usuario: username, contrasena: password)
-            } else {
-                self.utils.showSimpleAlert(titulo: Strings.attentionTitle, mensaje: Strings.noInternetMessage, vc: delegate!.self)
-            }
+            self.utils.showSimpleAlert(titulo: Strings.attentionTitle, mensaje: isOnline ? Strings.invalidDataMessage : Strings.noInternetMessage, vc: self.delegate!)
         }
+    }
+
+    func guardarUsuario(dni: String, nombre: String) {
+        let userDefaults = UserDefaults.standard
+        userDefaults.setValue(["dni": dni, "password": nombre], forKey: "usuario")
     }
     
     private func iniciarSesion(usuario: String, contrasena: String) {
@@ -50,6 +54,7 @@ class LoginPresenter {
             switch result {
             case .success:
                 self.delegate?.successResponse()
+                self.guardarUsuario(dni: usuario, nombre: contrasena)
             case .failure(let errorResponse):
                 self.utils.showSimpleAlert(
                     titulo: "\(Strings.attentionTitle) code: \(errorResponse.error.code)",
