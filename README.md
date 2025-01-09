@@ -20,10 +20,10 @@ Para comenzar con el proyecto, sigue estos pasos:
 Para probar diferentes escenarios en el login, sigue estas instrucciones:
 
 - **Error de servidor:**
-   - Introduce la letra **"a"** en el campo de usuario para provocar un error.
+   - Introduce la letra **"12345678"** en el campo de usuario para provocar un error.
    - Ejemplo:
      ```
-     username: a
+     username: 12345678
      password: asd
      ```
      **Resultado:** Se lanza una alerta indicando error en el login.
